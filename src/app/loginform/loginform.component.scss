@@ -1,0 +1,43 @@
+// .login,
+// .image {
+//   // min-height: 70vh;
+// }
+// .bg-image {
+//   background-image: url("../../assets/logo\ fuuast.svg");
+//   background-size: cover;
+//   background-position: center center;
+//   width: 450px;
+//   height: 450px;
+//   margin: 50px;
+// }
+
+// @include media-breakpoint-up(xl) {
+//   .container-fluid {
+//     display: block;
+//   }
+// }
+.btn .active{
+  color: rgb(119, 21, 21);
+}
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#0c0c0c;
+}
+span {
+  border-radius: 2px;
+  // background: transparent;
+  // margin: 0 10px;
+}
+.divider:before,
+.divider:after {
+  background: #979595;
+  height: 1px;
+  content: '';
+  flex: 1;
+}
+// .divider.left:after,
+// .divider.right:before {
+//   background: none;
+// }

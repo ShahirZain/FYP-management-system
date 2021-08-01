@@ -1,7 +1,70 @@
-<div class="container">
-  <div class="row">
-    <div class="md-col-12">
-      <h2><Header>Header</Header></h2>
-    </div>
+<router-outlet>
+  <div class="md-col-12 justify-content-center">
+    <h2>
+      <Header class="display-4 row justify-content-center"
+        >FYP Management System</Header
+      >
+    </h2>
+
+    <nav class="nav navbar-expand-lg bg-light">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a
+          class="nav-item nav-link active"
+          id="nav-student-tab"
+          data-toggle="tab"
+          href="#nav-student"
+          role="tab"
+          aria-selected="true"
+          aria-controls="nav-student"
+          routerLink="signup"
+          routerLinkActive="signup"
+          >Student</a
+        >
+        <a
+          class="nav-item nav-link"
+          id="nav-admin-tab"
+          data-toggle="tab"
+          href="#nav-admin"
+          role="tab"
+          aria-selected="false"
+          aria-controls="nav-admin"
+          routerLink="loginform"
+          routerLinkActive="loginform"
+          >Admin</a
+        >
+        <a
+          class="nav-item nav-link"
+          id="nav-teacher-tab"
+          data-toggle="tab"
+          href="#nav-teacher"
+          role="tab"
+          aria-selected="false"
+          aria-controls="nav-teacher"
+          routerLink="teacherlogin"
+          routerLinkActive="teacherlogin"
+          >Teacher</a
+        >
+      </div>
+    </nav>
+    <!-- <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-student"
+        role="tabpanel"
+        aria-labelledby="nav-student-tab"
+      ></div>
+      <div
+        class="tab-pane fade"
+        id="nav-admin"
+        role="tabpanel"
+        aria-labelledby="nav-admin-tab"
+      ></div>
+      <div
+        class="tab-pane fade"
+        id="nav-teacher"
+        role="tabpanel"
+        aria-labelledby="nav-teacher-tab"
+      ></div>
+    </div> -->
   </div>
-</div>
+</router-outlet>
